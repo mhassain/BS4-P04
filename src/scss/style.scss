@@ -1,0 +1,131 @@
+$icon-size: 3.5em;
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$min-height: 400px;
+/*======== Navbar ==========*/
+.navbar{
+	.nav-item{
+		padding-left: 1em;
+
+		.nav-link{
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+	.active{
+		border-left: 3px solid #444;
+	}
+}
+/*======== carousel ==========*/
+.carousel-item{
+	height: 450px;
+}
+.carousel-image-1{
+	background: url(../img/image1.jpeg);
+	background-size: cover;
+}
+.carousel-image-2{
+	background: url(../img/image2.jpeg);
+	background-size: cover;
+}
+.carousel-image-3{
+	background: url(../img/image3.jpeg);
+	background-size: cover;
+}
+
+/*======== HOME ICONS ==========*/
+#home-icons{
+	i{
+		font-size: $icon-size;
+	}
+}
+
+/*======== HOME GET-STARTED ==========*/
+#get-started{
+	background: url(../img/pc.jpeg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 250px;
+	position: relative;
+
+	.dark-overlay{
+		background-color: $dark-overlay;
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+/*======== VIDEO SECTION ==========*/
+#video{
+	@extend #get-started;
+	background: url(../img/people.jpeg);
+	i,h2{
+		font-size: 3em;
+	}
+}
+
+/*========= COPYRIGHT SECTION =========*/
+#copyright{
+	background-color: #000;
+}
+
+
+@media (max-width: 768px){
+	.nav-item{
+		padding-left: 0 !important;
+	}
+	#get-started{
+		min-height: $min-height;
+	}
+	#info{
+		h3{
+			font-size: 1.5em;
+		}
+		p{
+			font-size: 1.2em;
+		}
+		a{
+			font-size: 1em;
+			margin-bottom: 2em;
+		}
+	}
+}
+
+@media (max-width: 575px){
+	.carousel-item{
+		h1{
+			font-size: 2.5rem;
+		}
+	}
+	#get-started{
+		min-height: $min-height;
+
+		h1{
+			font-size: 1.5em;
+		}
+		p{
+			font-size: 1.4em;
+		}
+	}
+	#info{
+		h3{
+			font-size: 1.5em;
+		}
+		p{
+			font-size: 1.2em;
+		}
+		a{
+			font-size: 1em;
+			margin-bottom: 2em;
+		}
+	}
+	#video{
+		min-height: 200px;
+		i,h2{
+			font-size: 2em;
+		}
+	}
+}/*==== Media Query End (575)=====*/
