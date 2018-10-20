@@ -51,10 +51,38 @@
   #video i, #video h2 {
     font-size: 3em; }
 
+/*=================== ABOUT PAGE ==============*/
+#about-header {
+  background: url(../img/image1.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 200px; }
+
+#about img {
+  width: 350px;
+  height: 350px; }
+
+#icon-boxes i {
+  font-size: 3.5em; }
+
+/*=================== SERVICES PAGE ================*/
+#services-header {
+  background: url(../img/image2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 200px; }
+
 /*========= COPYRIGHT SECTION =========*/
 #copyright {
   background-color: #000; }
 
+/*========================= Media Query ====================*/
 @media (max-width: 768px) {
   .nav-item {
     padding-left: 0 !important; }
@@ -68,6 +96,7 @@
     font-size: 1em;
     margin-bottom: 2em; } }
 
+/*==== Media Query End (768)=====*/
 @media (max-width: 575px) {
   .carousel-item h1 {
     font-size: 2.5rem; }
@@ -87,6 +116,13 @@
   #video {
     min-height: 200px; }
     #video i, #video h2 {
-      font-size: 2em; } }
+      font-size: 2em; }
+  .card {
+    margin-bottom: 1em; }
+  #about img {
+    width: 250px;
+    height: 250px; }
+  #about .emage {
+    text-align: center !important; } }
 
 /*==== Media Query End (575)=====*/
