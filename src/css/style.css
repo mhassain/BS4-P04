@@ -78,6 +78,9 @@
   position: relative;
   min-height: 200px; }
 
+#services .list-group {
+  font-size: 20px; }
+
 /*========= COPYRIGHT SECTION =========*/
 #copyright {
   background-color: #000; }
