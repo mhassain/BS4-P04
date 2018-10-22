@@ -90,15 +90,11 @@ $min-height: 400px;
 }
 /*=================== SERVICES PAGE ================*/
 #services-header{
-  background: url(../img/image2.jpeg);
-	background-size: cover;
-	background-position: center center;
+@extend #about-header;
+}
+#services-header{
+	background: url(../img/image2.jpeg);
 	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	min-height: 200px;
-
-
 }
 #services{
 	.list-group {
@@ -106,7 +102,23 @@ $min-height: 400px;
 	}
 }
 
+/*=================== BLOG PAGE ================*/
+#blog-header{
+	@extend #about-header;
+}
+#blog-header{
+	background: url(../img/image3.jpeg);
+	background-attachment: fixed;
+}
 
+/*=============== CONTACT SECTION ===============*/
+#contact-header{
+	@extend #about-header;
+}
+#contact-header{
+	background: url(../img/image4.jpeg);
+	background-attachment: fixed
+}
 /*========= COPYRIGHT SECTION =========*/
 #copyright{
 	background-color: #000;
